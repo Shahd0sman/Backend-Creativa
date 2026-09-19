@@ -49,3 +49,6 @@ The journey starts with the user and ends when the Pinterest interface is displa
 ## Simple Flow
 
 ![Pinterest Request Flow](Flow.png)
+
+## Auther
+ Shahd Osman
