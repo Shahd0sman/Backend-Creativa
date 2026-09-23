@@ -1,0 +1,21 @@
+{
+  "name": "backend-creativa",
+  "version": "1.0.0",
+  "description": "This diagram explains what happens when a user enters `pinterest.com` in the browser and presses Enter.",
+  "main": "b.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shahd0sman/Backend-Creativa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Shahd0sman/Backend-Creativa/issues"
+  },
+  "homepage": "https://github.com/Shahd0sman/Backend-Creativa#readme"
+}
