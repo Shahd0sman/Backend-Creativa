@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+    --button:#9d8189;
+    --hover:#836b72;
+    --background:#e2cbc1;
+    --inputfocus:#f4acb7;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+    position: fixed;
+    left:500px;
+    top:200px;
+    background-color: var(--background);
+    padding: 16px;
+    border-radius: 8px;
+}
+.add{
+    display: flex;
+    gap:8px;
+}
+.adduser{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    border-right: 3px solid var(--button) ;
+    padding: 8px;
+    
+}
+.addproduct{
+     display: flex;
+    flex-direction: column;
+    gap:8px;
+    border-left: 3px solid var(--button) ;
+    padding: 8px;
+    
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+button{
+    border:none;
+    padding:8px;
+    border-radius: 8px;
+    background-color: var(--button);
+    color: white;
+}
+button:hover{
+    background-color:var(--hover) ;
+    transition: 100msy;
+}
+input{
+    padding: 8px 16px 8px 8px;
+    border-radius: 8px;
+    border: none;
+}
+.get{
+    display: flex;
+    justify-content: center;
+    gap:8px;
+}
+input:focus{
+    border: 1.5px solid var(--inputfocus);
+    outline: none;
+}

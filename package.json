@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/Shahd0sman/Backend-Creativa/issues"
   },
-  "homepage": "https://github.com/Shahd0sman/Backend-Creativa#readme"
+  "homepage": "https://github.com/Shahd0sman/Backend-Creativa#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0"
+  },
+  "allowScripts": {
+    "bcrypt@6.0.0": true
+  }
+  
 }
