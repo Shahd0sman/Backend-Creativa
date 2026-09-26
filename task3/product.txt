@@ -1,1 +1,1 @@
-[]
+[{"id":"1","name":"car","stock":"in stock"},{"id":"","name":"","stock":""},{"id":"","name":"","stock":""}]

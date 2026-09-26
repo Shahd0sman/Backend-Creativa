@@ -21,12 +21,12 @@
     </div>
     <div class="addproduct">
         <div class="inputs">
-        <input type="text" placeholder="id...">
-        <input type="text" placeholder="Name...">
-        <input type="text" placeholder="stock...">
+        <input type="text" placeholder="id..." id="product-id">
+        <input type="text" placeholder="Name..."id='product-name'>
+        <input type="text" placeholder="stock..." id="product-stock">
         </div>
         <div class="btn">
-        <button id="addproduct" type="submit">Post Product</button>
+        <button id="addproducts" type="button">Post Product</button>
         </div>
     </div> 
     </div>
@@ -36,12 +36,13 @@
     <button id="products">Get Products</button>
     </div>
     </div>
-    </div>
-    <div id="success-popup" class="popup" role="status" aria-live="polite">
-        <p>User added successfully</p>
-        <button id="close-popup" type="button">Close</button>
+
+    <div id="success-popup" class="popup">
+        <p id="popup-message"></p>
+        <button id="close-popup" >ok</button>
     </div>
     <div id="user"></div>
+    <div id="product"></div>
     <script src="script.js"></script>
 </body>
 </html>
