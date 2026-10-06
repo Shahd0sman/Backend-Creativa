@@ -76,4 +76,3 @@ if(req.url==='/products'&&req.method==='POST'){
 server.listen(5000,()=>{
      console.log('server link is: http://localhost:5000')
 })
-

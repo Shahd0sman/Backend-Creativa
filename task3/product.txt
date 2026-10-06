@@ -1,1 +1,1 @@
-[{"id":"1","name":"car","stock":"in stock"},{"id":"","name":"","stock":""},{"id":"","name":"","stock":""}]
+[{"id":"1","name":"car","stock":"in stock"},{"id":"","name":"","stock":""},{"id":"","name":"","stock":""},{"id":"2","name":"cycle","stock":"not in stock"},{"id":"4","name":"vechil","stock":"in stock"}]

@@ -19,10 +19,16 @@
   },
   "homepage": "https://github.com/Shahd0sman/Backend-Creativa#readme",
   "dependencies": {
-    "bcrypt": "^6.0.0"
+    "bcrypt": "^6.0.0",
+    "express": "^5.2.1",
+    "pg": "^8.23.1",
+    "typeorm": "^1.1.1"
   },
   "allowScripts": {
     "bcrypt@6.0.0": true
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.3"
   }
-  
 }
