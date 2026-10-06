@@ -8,10 +8,22 @@ const taskSchema=new EntitySchema({
             type:Number,
             generated:true
         },
-        name:{
+        title:{
             type:String
         },
+        deadline:{
+            type:Date
+        },
          priority:{
+            type:String,
+            nullable:true
+        }
+        ,
+        category:{
+            type:String,
+            nullable:true
+        },
+        status:{
             type:String,
             nullable:true
         }
@@ -19,8 +31,11 @@ const taskSchema=new EntitySchema({
   relations:{
             user:{
                 type:'many-to-one',
-                target:'users',
-                inverSide:'task'
+                target:'user',
+                inverseSide:'task',
+                 joinColumn: {
+                name: 'userid'
+            }
             }}
         })
 module.exports=taskSchema

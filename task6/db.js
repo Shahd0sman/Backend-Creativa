@@ -7,7 +7,7 @@ const data= new DataSource({
     port:5432,
     username:'postgres',
     password:'1222005',
-    database:'users_notes',
+    database:'todo',
     entities:[users,tasks]
 })
 module.exports=data

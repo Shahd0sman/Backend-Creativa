@@ -1,6 +1,6 @@
 const {EntitySchema}=require('typeorm')
 const userSchema=new EntitySchema({
-    name:'user',
+    name:'user',//name of entity
     tableName:'users',
     columns:{
         id:{
@@ -11,16 +11,16 @@ const userSchema=new EntitySchema({
         name:{
             type:String
         },
-        age:{
-            type:Number
+        email:{
+            type:String
         },
        
     },
      relations:{
             tasks:{
                 type:'one-to-many',
-                target:'tasks',
-                inverSide:'user'
+                target:'task', //name of entity
+                inverseSide:'user'
             }
         }
 })
