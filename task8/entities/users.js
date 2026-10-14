@@ -1,7 +1,8 @@
+
 const {EntitySchema}=require('typeorm')
 const userSchema=new EntitySchema({
     name:'user',
-    tableName:'client',
+    tableName:'users',
     columns:{
         id:{
             primary:true,
@@ -9,30 +10,34 @@ const userSchema=new EntitySchema({
             generated:true
         },
         username:{
-            type:'varchar',
+            type:String,
             nullable:false
         },
         email:{
-            type:'varchar',
+            type:String,
             unique:true,
             nullable:false
         },
         password:{
-            type:'varchar',
+            type:String,
             nullable:false
             
         },
+        createdAt:{
+            type:'timestamp',
+            createDate:true
+        },
         role:{
-            type:'varchar',
+            type:String,
             default:'user',
             nullable:false
         }
        
     },
      relations:{
-            links:{
+            post:{
                 type:'one-to-many',
-                target:'link',
+                target:'post',
                 inverseSide:'user'
             }
         }
