@@ -90,3 +90,12 @@ data2.txt ──┘
 
 ## Auther
  Shahd Osman
+
+{
+    "title":"task1",
+    "category":"school",
+    "deadline":"11-10-2026",
+   "priority":"high",
+   "status":"todo"
+
+}
