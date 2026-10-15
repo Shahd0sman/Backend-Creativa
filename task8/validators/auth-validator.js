@@ -8,5 +8,4 @@ const loginZod=z.object({
     email:z.string().trim().regex(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/).max(255),
     password:z.string().min(8).max(72)
 })
-module.exports=registerZod
-module.exports=loginZod
+module.exports={registerZod,loginZod}

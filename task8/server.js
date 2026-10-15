@@ -1,9 +1,11 @@
 const data = require('./db')
 const express = require('express')
 const authroutes=require('./routes/auth-routes')
+const postRouts=require('./routes/post-routes')
 const app = express()
 app.use(express.json())
 app.use('/api/auth',authroutes)
+app.use('/api/posts',postRouts)
 
 
 async function start() {

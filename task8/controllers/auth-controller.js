@@ -18,7 +18,7 @@ async function register(req,res){
         const hash=await bcrypt.hash(password,salt)
         const user=userRepo.create({username,email,password:hash})
         await userRepo.save(user)
-        res.status(200).json({
+        res.status(201).json({
             message:'user creates successfully'
         })
     } catch (error) {
@@ -45,8 +45,8 @@ async function login(req,res){
         }
         const token=jwt.sign({
             id:find.id,
-        email:find.id,
-        role:find.role
+            email:find.email,
+            role:find.role
             },process.env.JWT_SECRET,{expiresIn:'3h'})
     return res.status(200).json({
       message:`welcome ${find.username}`,
@@ -58,5 +58,4 @@ async function login(req,res){
         })
     }
 }
-module.exports=register
-module.exports=login
+module.exports={register,login}

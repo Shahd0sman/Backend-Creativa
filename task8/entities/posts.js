@@ -22,7 +22,7 @@ const postSchema=new EntitySchema({
             createDate:true
             
         },
-        updatedAt:{
+        updatedat:{
             type:'timestamp',
             updateDate:true
         },
